@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Arrays;
+
 
 /**
  * I used the debugger to go through each big point in the code that could break.
@@ -32,7 +32,12 @@ public class Main {
     public static void main(String[] args) {
         try {
             // Added a break point here
-            ArrayList<Integer> numbersList = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
+            ArrayList<Integer> numbersList = new ArrayList<>();
+            numbersList.add(1);
+            numbersList.add(2);
+            numbersList.add(3);
+            numbersList.add(4);
+            numbersList.add(5);
             // Added a break point here
             double avg = average(numbersList);
             System.out.println("Average: " + avg);
